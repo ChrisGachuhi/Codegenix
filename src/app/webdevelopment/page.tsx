@@ -1,19 +1,19 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import webHeroMobile from '../../../public/Website Devt services/Landing page Mobile/Background.jpg'
-import serviceSummary from '../../../public/Website Devt services/Why choose Us Desktop/Image.jpg'
-import landingPagesIcon from '../../../public/Website Devt services/Our services desktop/First service icon.png'
-import ecommerceIcon from '../../../public/Website Devt services/Our services desktop/Second service icon.png'
-import portalsIcon from '../../../public/Website Devt services/Our services desktop/Third service icon.png'
-import hostingIcon from '../../../public/Website Devt services/Our services desktop/Fourth service icon.png'
-import maintenanceIcon from '../../../public/Website Devt services/Our services desktop/Fifth service icon.png'
+import webHeroMobile from '../../../public/Assets/Website Devt services/Landing page Mobile/Background.jpg'
+import serviceSummary from '../../../public/Assets/Website Devt services/Why choose Us Desktop/Image.jpg'
+import landingPagesIcon from '../../../public/Assets/Website Devt services/Our services Desktop/First service icon.png'
+import ecommerceIcon from '../../../public/Assets/Website Devt services/Our services Desktop/Second service icon.png'
+import portalsIcon from '../../../public/Assets/Website Devt services/Our services Desktop/Third service icon.png'
+import hostingIcon from '../../../public/Assets/Website Devt services/Our services Desktop/Fourth service icon.png'
+import maintenanceIcon from '../../../public/Assets/Website Devt services/Our services Desktop/Fifth service icon.png'
 
-import consultationIcon from '../../../public/Website Devt services/Our Process Desktop/First process Icon.png'
-import interfaceIcon from '../../../public/Website Devt services/Our Process Desktop/Second process Icon.png'
-import developmentIcon from '../../../public/Website Devt services/Our Process Desktop/Third process Icon.png'
-import testingIcon from '../../../public/Website Devt services/Our Process Desktop/Fourth process Icon.png'
-import launchIcon from '../../../public/Website Devt services/Our Process Desktop/Fifth process Icon.png'
+import consultationIcon from '../../../public/Assets/Website Devt services/Our Process Desktop/First process Icon.png'
+import interfaceIcon from '../../../public/Assets/Website Devt services/Our Process Desktop/Second process Icon.png'
+import developmentIcon from '../../../public/Assets/Website Devt services/Our Process Desktop/Third process Icon.png'
+import testingIcon from '../../../public/Assets/Website Devt services/Our Process Desktop/Fourth process Icon.png'
+import launchIcon from '../../../public/Assets/Website Devt services/Our Process Desktop/Fifth process Icon.png'
 
 const WebDevelopment = () => {
   return (
@@ -23,7 +23,7 @@ const WebDevelopment = () => {
         <Image
           src={webHeroMobile}
           alt='codegenix-background-webdevelopment'
-          className='w-full'
+          className='w-fit'
         />
 
         <div className='p-4 md:p-6 text-right'>
@@ -44,7 +44,7 @@ const WebDevelopment = () => {
         </div>
       </section>
 
-      {/* service summary */}
+      {/* why choose us */}
       <section className='grid grid-cols-1 md:grid-cols-2 items-center gap-3 md:flex-row'>
         <div className='p-6 md:p-10 flex flex-col justify-between'>
           <h2 className='text-4xl font-bold capitalize mb-4'>
@@ -99,7 +99,7 @@ const WebDevelopment = () => {
           our sevices - what we offer:
         </h2>
 
-        <div className='p-0 md:p-6 flex flex-wrap flex-col md:flex-row justify-center items-center gap-6 md:gap-20'>
+        <div className='p-0 md:p-6 flex flex-wrap flex-col md:flex-row justify-center items-center gap-6 md:gap-5'>
           <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md space-y-3 md:space-y-0 border rounded-lg w-80'>
             <Image src={landingPagesIcon} alt='value-icon' className='mb-3' />
             <h3 className='font-semibold text-xl mb-2'>
@@ -137,7 +137,7 @@ const WebDevelopment = () => {
           </div>
         </div>
 
-        <Link href={'/digital-marketing'}>
+        <Link href={'/contact'}>
           <button className='bg-primary-green my-5 text-black rounded-tl-lg rounded-br-lg border border-black px-5 py-2 items-center'>
             See Our Work
           </button>
@@ -184,7 +184,7 @@ const WebDevelopment = () => {
           </div>
         </div>
 
-        <Link href={'/digital-marketing'}>
+        <Link href={'/contact'}>
           <button className='bg-primary-green my-5 text-black rounded-tl-lg rounded-br-lg border border-black px-5 py-2 items-center'>
             Start Your Project
           </button>
@@ -192,13 +192,13 @@ const WebDevelopment = () => {
       </section>
 
       {/* cta */}
-      <section className='bg-ctaMobile md:bg-ctaDesktop bg-cover bg-no-repeat w-full p-6'>
+      <section className='bg-ctaMobile md:bg-ctaDesktop bg-cover bg-top bg-no-repeat w-full p-6'>
         <div className='mx-auto p-6 text-center w-fit space-y-4'>
           <h2 className='text-4xl md:text-5xl font-bold'>Get in Touch!</h2>
           <p className='text-xl md:text-2xl text-gray-500'>
             Let&apos;s Build Your Website!
           </p>
-          <Link href={'/digital-marketing'}>
+          <Link href={'/contact'}>
             <button className='bg-primary-green my-5 text-black rounded-tl-lg rounded-br-lg border border-black px-5 py-2'>
               Get you Quote
             </button>

@@ -1,8 +1,19 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import brandingHero from '../../../public/Website Devt services/Landing page Mobile/Background.jpg'
-import campaignIcon from '../../../public/Homepage/Why Choose Us Desktop/Socia_ Media Campaign.png'
+import trainingHeroDesktop from '../../../public/Assets/Training services/Learn build and grow desktop/image.png'
+import trainingHeroMobile from '../../../public/Assets/Training services/Learn build and grow mobile/image.png'
+
+import growthIcon from '../../../public/Assets/Training services/What we offer desktop/beginner to advanced icon.png'
+import curriculumIcon from '../../../public/Assets/Training services/What we offer desktop/Custom courses icon.png'
+import handsonIcon from '../../../public/Assets/Training services/What we offer desktop/hand on icon.png'
+import internshipIcon from '../../../public/Assets/Training services/What we offer desktop/Internship icon.png'
+
+import expertsIcon from '../../../public/Assets/Training services/Why choose us desktop/Expert icon.png'
+import practicalIcon from '../../../public/Assets/Training services/Why choose us desktop/Project icon.png'
+import certificationIcon from '../../../public/Assets/Training services/Why choose us desktop/Certificate icon.png'
+import flexibleIcon from '../../../public/Assets/Training services/Why choose us desktop/Flexible learning icon.png'
+
 const Training = () => {
   return (
     <main>
@@ -18,7 +29,7 @@ const Training = () => {
             hands-on training designed for individuals and businesses.
           </p>
 
-          <Link href={'/digital-marketing'}>
+          <Link href={'/contact'}>
             <button className='bg-primary-green my-5 text-black rounded-tl-lg rounded-br-lg border border-black px-5 py-2 items-center'>
               Join Our Training Program
             </button>
@@ -27,9 +38,14 @@ const Training = () => {
 
         <div className='p-4'>
           <Image
-            src={brandingHero}
+            src={trainingHeroDesktop}
             alt='codegenix-background-webdevelopment'
-            className='rounded-lg w-full'
+            className='hidden md:block'
+          />
+          <Image
+            src={trainingHeroMobile}
+            alt='codegenix-background-webdevelopment'
+            className='md:hidden'
           />
         </div>
       </section>
@@ -43,7 +59,12 @@ const Training = () => {
 
           <div className='my-4 grid md:grid-cols-2 gap-6 md:gap-6 w-full md:w-2/3'>
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image
+                src={growthIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={130}
+              />
               <h3 className='font-semibold my-2 text-md'>
                 Beginner to Advanced Web Development Training
               </h3>
@@ -60,7 +81,12 @@ const Training = () => {
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image
+                src={curriculumIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={130}
+              />
               <h3 className='font-semibold my-2 text-md'>
                 Custom Courses for Individuals & Institutions
               </h3>
@@ -77,7 +103,12 @@ const Training = () => {
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image
+                src={handsonIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={130}
+              />
               <h3 className='font-semibold my-2 text-md'>
                 Hands-on Projects & Real-World Applications
               </h3>
@@ -94,7 +125,12 @@ const Training = () => {
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image
+                src={internshipIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={130}
+              />
               <h3 className='font-semibold my-2 text-md'>
                 Internship Opportunities for Top Performers
               </h3>
@@ -108,7 +144,7 @@ const Training = () => {
             </div>
           </div>
 
-          <Link href={'/digital-marketing'}>
+          <Link href={'/contact'}>
             <button className='bg-primary-green mb-6 text-black rounded-tl-lg rounded-br-lg border border-black px-4 py-1'>
               Start Learning Today
             </button>
@@ -125,13 +161,23 @@ const Training = () => {
 
           <div className='container text-center my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-4'>
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md space-y-3 md:space-y-0 border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image
+                src={expertsIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={130}
+              />
               <h3 className='font-semibold text-xl mb-2'>Expert Instructors</h3>
               <p>Learn from industry professionals.</p>
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md space-y-3 md:space-y-0 border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image
+                src={practicalIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={130}
+              />
               <h3 className='font-semibold text-xl mb-2'>
                 Project-Based Learning
               </h3>
@@ -139,13 +185,23 @@ const Training = () => {
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md space-y-3 md:space-y-0 border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image
+                src={certificationIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={130}
+              />
               <h3 className='font-semibold text-xl mb-2'>Certification</h3>
               <p>Earn a certificate upon completion. </p>
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md space-y-3 md:space-y-0 border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image
+                src={flexibleIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={130}
+              />
               <h3 className='font-semibold text-xl mb-2'>Flexible Learning </h3>
               <p>Online and in-person options available.</p>
             </div>
@@ -154,7 +210,7 @@ const Training = () => {
       </section>
 
       {/* cta */}
-      <section className='bg-ctaMobile md:bg-ctaDesktop bg-cover bg-no-repeat w-full p-6'>
+      <section className='bg-ctaMobileTraining md:bg-ctaDesktopTraining bg-cover bg-no-repeat w-full p-6'>
         <div className='mx-auto p-6 text-center w-fit space-y-4'>
           <h2 className='text-4xl md:text-5xl font-bold'>
             Start Your Learning Journey Today?
@@ -162,7 +218,7 @@ const Training = () => {
           <p className='text-xl md:text-2xl text-gray-500'>
             Enrol Now & Upgrade Your Skills
           </p>
-          <Link href={'/digital-marketing'}>
+          <Link href={'/contact'}>
             <button className='bg-primary-green my-5 text-black rounded-tl-lg rounded-br-lg border border-black px-5 py-2'>
               Book a Consult!
             </button>

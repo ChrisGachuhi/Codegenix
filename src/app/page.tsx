@@ -1,16 +1,16 @@
 import Image from 'next/image'
-import logoMobile from '../../public/Homepage/Landingpagemobile/vertical logo.png'
-import logoDesktop from '../../public/Homepage/Landingpagedesktop/homepage logo new.png'
+import logoMobile from '../../public/Assets/Homepage/Landing page mobile/vertical logo.png'
+import logoDesktop from '../../public/Assets/Homepage/Landing page desktop/homepage logo new.png'
 
-import webIcon from '../../public/Homepage/What we do Desktop/Web apps icon.png'
-import trainingIcon from '../../public/Homepage/What we do Desktop/Training & Workshop Icon.png'
-import marketingIcon from '../../public/Homepage/What we do Desktop/Digital Marketing icon.png'
-import brandingIcon from '../../public/Homepage/What we do Desktop/Design & Branding icon.png'
+import webIcon from '../../public/Assets/Homepage/What we do Desktop/Web apps icon.png'
+import trainingIcon from '../../public/Assets/Homepage/What we do Desktop/Training & Workshop Icon.png'
+import marketingIcon from '../../public/Assets/Homepage/What we do Desktop/Digital Marketing icon.png'
+import brandingIcon from '../../public/Assets/Homepage/What we do Desktop/Design & Branding icon.png'
 
-import digitalIcon from '../../public/Homepage/Why Choose Us Desktop/Digital Marketing.png'
-import mobileAppsIcon from '../../public/Homepage/Why Choose Us Desktop/Mobile apps.png'
-import campaignIcon from '../../public/Homepage/Why Choose Us Desktop/Socia_ Media Campaign.png'
-import webAppsIcon from '../../public/Homepage/Why Choose Us Desktop/Web apps.png'
+import digitalIcon from '../../public/Assets/Homepage/Why Choose Us Desktop/Digital Marketing.png'
+import mobileAppsIcon from '../../public/Assets/Homepage/Why Choose Us Desktop/Mobile apps.png'
+import campaignIcon from '../../public/Assets/Homepage/Why Choose Us Desktop/Socia_ Media Campaign.png'
+import webAppsIcon from '../../public/Assets/Homepage/Why Choose Us Desktop/Web apps.png'
 
 import Link from 'next/link'
 
@@ -138,7 +138,7 @@ export default function Home() {
 
           <div className='container text-center my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-4'>
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md space-y-3 md:space-y-0 border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image src={webAppsIcon} alt='value-icon' className='mb-3' />
               <h3 className='font-semibold text-xl mb-2'>
                 SEO & Ad-Ready Websites
               </h3>
@@ -157,7 +157,7 @@ export default function Home() {
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md space-y-3 md:space-y-0 border rounded-lg'>
-              <Image src={webAppsIcon} alt='value-icon' className='mb-3' />
+              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
               <h3 className='font-semibold text-xl mb-2'>
                 Expert-Team with Proven Results
               </h3>

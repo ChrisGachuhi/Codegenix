@@ -1,8 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import brandingHero from '../../../public/Website Devt services/Landing page Mobile/Background.jpg'
-import campaignIcon from '../../../public/Homepage/Why Choose Us Desktop/Socia_ Media Campaign.png'
+import brandingHero from '../../../public/Assets/Branding services/Craft a unique brand desktop/Image.jpg'
+import motionIcon from '../../../public/Assets/Branding services/What we offer desktop/Motion graphics icon.png'
+import logoIcon from '../../../public/Assets/Branding services/What we offer desktop/Logo design icon.png'
+import materialsIcon from '../../../public/Assets/Branding services/What we offer desktop/Marketing materials icon.png'
+import corporateIcon from '../../../public/Assets/Branding services/What we offer desktop/Corporate branding icon.png'
+
+import consistencyIcon from '../../../public/Assets/Branding services/Why choose us desktop/Consistency icon.png'
+import creativeIcon from '../../../public/Assets/Branding services/Why choose us desktop/Creative icon.png'
+import speedIcon from '../../../public/Assets/Branding services/Why choose us desktop/Fast turn-around icon.png'
+import expertsIcon from '../../../public/Assets/Branding services/Why choose us desktop/Experts icon.png'
 
 const Branding = () => {
   return (
@@ -44,7 +52,12 @@ const Branding = () => {
 
           <div className='my-4 grid md:grid-cols-2 gap-6 md:gap-6 w-full md:w-2/3'>
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image
+                src={logoIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={130}
+              />
               <h3 className='font-semibold my-2 text-md'>
                 SEO & Ad-Ready Websites
               </h3>
@@ -58,7 +71,12 @@ const Branding = () => {
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image
+                src={motionIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={130}
+              />
               <h3 className='font-semibold my-2 text-md'>
                 SEO & Ad-Ready Websites
               </h3>
@@ -72,7 +90,12 @@ const Branding = () => {
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image
+                src={materialsIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={130}
+              />
               <h3 className='font-semibold my-2 text-md'>
                 SEO & Ad-Ready Websites
               </h3>
@@ -86,7 +109,12 @@ const Branding = () => {
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image
+                src={corporateIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={130}
+              />
               <h3 className='font-semibold my-2 text-md'>
                 SEO & Ad-Ready Websites
               </h3>
@@ -100,7 +128,7 @@ const Branding = () => {
             </div>
           </div>
 
-          <Link href={'/digital-marketing'}>
+          <Link href={'/contact'}>
             <button className='bg-primary-green mb-6 text-black rounded-tl-lg rounded-br-lg border border-black px-4 py-1'>
               Let&apos;s Elevate Your Brand
             </button>
@@ -122,7 +150,12 @@ const Branding = () => {
 
           <div className='container text-center my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-4'>
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md space-y-3 md:space-y-0 border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image
+                src={creativeIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={100}
+              />
               <h3 className='font-semibold text-xl mb-2'>
                 SEO & Ad-Ready Websites
               </h3>
@@ -133,7 +166,12 @@ const Branding = () => {
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md space-y-3 md:space-y-0 border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image
+                src={consistencyIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={100}
+              />
               <h3 className='font-semibold text-xl mb-2'>
                 End-to-End Digital Solutions
               </h3>
@@ -141,7 +179,12 @@ const Branding = () => {
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md space-y-3 md:space-y-0 border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image
+                src={speedIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={100}
+              />
               <h3 className='font-semibold text-xl mb-2'>
                 Expert-Team with Proven Results
               </h3>
@@ -151,7 +194,12 @@ const Branding = () => {
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md space-y-3 md:space-y-0 border rounded-lg'>
-              campaignIcon
+              <Image
+                src={expertsIcon}
+                alt='value-icon'
+                className='mb-3'
+                height={100}
+              />
               <h3 className='font-semibold text-xl mb-2'>
                 Growth-Focused Strategy
               </h3>
@@ -162,7 +210,7 @@ const Branding = () => {
       </section>
 
       {/* cta */}
-      <section className='bg-ctaMobile md:bg-ctaDesktop bg-cover bg-no-repeat w-full p-6'>
+      <section className='bg-ctaMobileBranding md:bg-ctaDesktopBranding bg-cover bg-no-repeat w-full p-6'>
         <div className='mx-auto p-6 text-center w-fit space-y-4'>
           <h2 className='text-4xl md:text-5xl font-bold'>
             Need a Unique Brand Identity?
@@ -170,7 +218,7 @@ const Branding = () => {
           <p className='text-xl md:text-2xl text-gray-500'>
             Get a Free Branding Consultation!
           </p>
-          <Link href={'/digital-marketing'}>
+          <Link href={'/contact'}>
             <button className='bg-primary-green my-5 text-black rounded-tl-lg rounded-br-lg border border-black px-5 py-2'>
               Let&apos;s Talk!
             </button>

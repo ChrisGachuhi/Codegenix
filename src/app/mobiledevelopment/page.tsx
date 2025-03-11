@@ -1,8 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import brandingHero from '../../../public/Website Devt services/Landing page Mobile/Background.jpg'
-import campaignIcon from '../../../public/Homepage/Why Choose Us Desktop/Socia_ Media Campaign.png'
+import brandingHero from '../../../public/Assets/Mobile app development services/Turn your app idea dekstop/image.png'
+
+import customIcon from '../../../public/Assets/Mobile app development services/What we offer desktop/custom icon.png'
+import platformIcon from '../../../public/Assets/Mobile app development services/What we offer desktop/cross platform icon.png'
+import interfaceIcon from '../../../public/Assets/Mobile app development services/What we offer desktop/app ux_ui icon.png'
+import publishIcon from '../../../public/Assets/Mobile app development services/What we offer desktop/app publishing icon.png'
+
+import solutionsIcon from '../../../public/Assets/Mobile app development services/What we offer desktop/custom icon.png'
+import secureIcon from '../../../public/Assets/Mobile app development services/What we offer desktop/cross platform icon.png'
+import completeIcon from '../../../public/Assets/Mobile app development services/What we offer desktop/app ux_ui icon.png'
+import scalableIcon from '../../../public/Assets/Mobile app development services/What we offer desktop/app publishing icon.png'
 
 const MobileDevelopment = () => {
   return (
@@ -27,7 +36,7 @@ const MobileDevelopment = () => {
             and Android, tailored to your business needs.
           </p>
 
-          <Link href={'/digital-marketing'}>
+          <Link href={'/contact'}>
             <button className='bg-primary-green my-5 text-black rounded-tl-lg rounded-br-lg border border-black px-5 py-2 items-center'>
               Let&apos;s Build Your App
             </button>
@@ -36,7 +45,7 @@ const MobileDevelopment = () => {
       </section>
 
       {/* What we offer */}
-      <section className='p-6'>
+      <section className='p-6 bg-appDevelopmentMobile md:bg-appDevelopmentDesktop bg-cover'>
         <div className='mx-auto p-4 flex flex-col items-center justify-center gap-4'>
           <h2 className='text-3xl font-semibold mt-6 text-center'>
             What We Offer
@@ -44,7 +53,7 @@ const MobileDevelopment = () => {
 
           <div className='my-4 grid md:grid-cols-2 gap-6 md:gap-6 w-full md:w-2/3'>
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image src={customIcon} alt='value-icon' className='mb-3' />
               <h3 className='font-semibold my-2 text-md'>
                 Custom Mobile App Development
               </h3>
@@ -64,7 +73,7 @@ const MobileDevelopment = () => {
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image src={platformIcon} alt='value-icon' className='mb-3' />
               <h3 className='font-semibold my-2 text-md'>
                 Cross-Platform App Development
               </h3>
@@ -84,7 +93,7 @@ const MobileDevelopment = () => {
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image src={interfaceIcon} alt='value-icon' className='mb-3' />
               <h3 className='font-semibold my-2 text-md'>App UI/UX Design</h3>
 
               <ul className='space-y-2 mt-2'>
@@ -102,7 +111,7 @@ const MobileDevelopment = () => {
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image src={publishIcon} alt='value-icon' className='mb-3' />
               <h3 className='font-semibold my-2 text-md'>
                 App Publishing & Maintenance
               </h3>
@@ -118,7 +127,7 @@ const MobileDevelopment = () => {
             </div>
           </div>
 
-          <Link href={'/digital-marketing'}>
+          <Link href={'/contact'}>
             <button className='bg-primary-green mb-6 text-black rounded-tl-lg rounded-br-lg border border-black px-4 py-1'>
               Start Learning Today
             </button>
@@ -126,7 +135,7 @@ const MobileDevelopment = () => {
         </div>
       </section>
 
-      {/* Why train with us */}
+      {/* Why choose us */}
       <section className='p-6'>
         <div className='p-4 flex flex-col items-center'>
           <h2 className='text-3xl font-semibold mt-6 text-center capitalize'>
@@ -135,19 +144,19 @@ const MobileDevelopment = () => {
 
           <div className='container text-center my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-4'>
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md space-y-3 md:space-y-0 border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image src={solutionsIcon} alt='value-icon' className='mb-3' />
               <h3 className='font-semibold text-xl mb-2'> Custom Solutions</h3>
               <p>Built for your unique business needs.</p>
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md space-y-3 md:space-y-0 border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image src={secureIcon} alt='value-icon' className='mb-3' />
               <h3 className='font-semibold text-xl mb-2'>Fast & Secure Apps</h3>
               <p>High performance with top-tier security.</p>
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md space-y-3 md:space-y-0 border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image src={completeIcon} alt='value-icon' className='mb-3' />
               <h3 className='font-semibold text-xl mb-2'>
                 End-to-End Development
               </h3>
@@ -155,7 +164,7 @@ const MobileDevelopment = () => {
             </div>
 
             <div className='bg-primary-gray flex flex-col px-4 py-8 justify-between items-center shadow-md space-y-3 md:space-y-0 border rounded-lg'>
-              <Image src={campaignIcon} alt='value-icon' className='mb-3' />
+              <Image src={scalableIcon} alt='value-icon' className='mb-3' />
               <h3 className='font-semibold text-xl mb-2'>
                 Scalable & Future-Proof
               </h3>
@@ -166,7 +175,7 @@ const MobileDevelopment = () => {
       </section>
 
       {/* cta */}
-      <section className='bg-ctaMobile md:bg-ctaDesktop bg-cover bg-no-repeat w-full p-6'>
+      <section className='bg-ctaMobileAppDev md:bg-ctaDesktopAppDev bg-cover bg-no-repeat w-full p-6'>
         <div className='mx-auto p-6 text-center w-fit space-y-4'>
           <h2 className='text-4xl md:text-5xl font-bold'>
             Let&apos;s Build Something Great Together!
@@ -175,7 +184,7 @@ const MobileDevelopment = () => {
             Have an app idea? Let’s bring it to life with cutting-edge design
             and development!
           </p>
-          <Link href={'/digital-marketing'}>
+          <Link href={'/contact'}>
             <button className='bg-primary-green my-5 text-black rounded-tl-lg rounded-br-lg border border-black px-5 py-2'>
               Book a Consult!
             </button>
