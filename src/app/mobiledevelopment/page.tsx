@@ -8,10 +8,10 @@ import platformIcon from '../../../public/Assets/Mobile app development services
 import interfaceIcon from '../../../public/Assets/Mobile app development services/What we offer desktop/app ux_ui icon.png'
 import publishIcon from '../../../public/Assets/Mobile app development services/What we offer desktop/app publishing icon.png'
 
-import solutionsIcon from '../../../public/Assets/Mobile app development services/What we offer desktop/custom icon.png'
-import secureIcon from '../../../public/Assets/Mobile app development services/What we offer desktop/cross platform icon.png'
-import completeIcon from '../../../public/Assets/Mobile app development services/What we offer desktop/app ux_ui icon.png'
-import scalableIcon from '../../../public/Assets/Mobile app development services/What we offer desktop/app publishing icon.png'
+import solutionsIcon from '../../../public/Assets/Mobile app development services/Why choose us desktop/custom solutions icon.png'
+import secureIcon from '../../../public/Assets/Mobile app development services/Why choose us desktop/fast & secure apps icon.png'
+import completeIcon from '../../../public/Assets/Mobile app development services/Why choose us desktop/end to end icon.png'
+import scalableIcon from '../../../public/Assets/Mobile app development services/Why choose us desktop/scalable icon.png'
 
 const MobileDevelopment = () => {
   return (
